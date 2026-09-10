@@ -1669,20 +1669,12 @@
             </p>
 
             <div style="background: rgba(248, 113, 113, 0.12); border: 1px solid rgba(248, 113, 113, 0.4); border-radius: 8px; padding: 0.8rem; text-align: left; max-height: 160px; overflow-y: auto; font-family: 'Courier New', monospace; font-size: 0.8rem; color: #fecaca; margin-bottom: 1rem;">
-                <strong style="color: #f87171; display: block; margin-bottom: 0.4rem;">❌ Daftar File Hilang / Salah Path:</strong>
+                <strong style="color: #f87171; display: block; margin-bottom: 0.4rem;">❌ Daftar File Hilang / Salah:</strong>
                 <ul style="margin-left: 1.2rem;">
                     ${failedList.map(path => `<li style="margin-bottom: 0.3rem; word-break: break-all;"><code>${path}</code></li>`).join('')}
                 </ul>
             </div>
 
-            <div class="tips-box" style="border-color: rgba(250, 204, 21, 0.4); background: rgba(250, 204, 21, 0.05);">
-                <div class="tips-title" style="color: #facc15;">💡 CARA SOLUSI KETIMPANGAN PATH:</div>
-                <ol style="font-size: 0.8rem; color: #e2e8f0; margin-left: 1.2rem; line-height: 1.4;">
-                    <li>Cek nama folder di GitHub. Apakah <code>Properties</code> atau <code>properties</code>? (Huruf kapital berpengaruh!).</li>
-                    <li>Cek ekstensi file (contoh: <code>.png</code> vs <code>.PNG</code> atau <code>.MP3</code> vs <code>.mp3</code>).</li>
-                    <li>Pastikan file-file di atas sudah di-upload ke repositori GitHub.</li>
-                </ol>
-            </div>
 
             <div style="margin-top: 1.2rem;">
                 <button onclick="location.reload()" style="background: linear-gradient(135deg, #ef4444, #dc2626); color: #fff; border: none; padding: 0.6rem 1.4rem; border-radius: 6px; font-weight: bold; cursor: pointer; box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);">🔄 Coba Muat Ulang</button>
